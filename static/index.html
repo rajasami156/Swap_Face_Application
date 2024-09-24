@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Swap Application</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Face Swap Application</h1>
+        <div class="upload-section">
+            <div class="upload-box">
+                <label for="sourceImage">Source Image:</label>
+                <input type="file" id="sourceImage" accept="image/*">
+                <img id="sourcePreview" src="#" alt="Source Preview" />
+            </div>
+            <div class="upload-box">
+                <label for="targetImage">Target Image:</label>
+                <input type="file" id="targetImage" accept="image/*">
+                <img id="targetPreview" src="#" alt="Target Preview" />
+            </div>
+        </div>
+        <button id="swapButton">Swap Faces</button>
+        <div class="result-section">
+            <h2>Swapped Image:</h2>
+            <img id="resultImage" src="#" alt="Swapped Result" />
+        </div>
+    </div>
+    
+    <!-- Loading Spinner (Optional Enhancement) -->
+    <div id="loading" class="loading" style="display: none;">
+        <div class="spinner"></div>
+        <p>Swapping faces, please wait...</p>
+    </div>
+    
+    <!-- Credit Section -->
+    <footer class="footer">
+        <p>Created by <a href="https://www.linkedin.com/in/samiullah156/" target="_blank">Samiullah</a></p>
+    </footer>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>

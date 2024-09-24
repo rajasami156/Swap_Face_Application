@@ -1,0 +1,10 @@
+insightface==0.7.3
+numpy
+opencv-python
+matplotlib
+insightface
+onnxruntime==1.19.2
+fastapi 
+uvicorn 
+python-multipart
+gdown==5.2.0
